@@ -42,7 +42,7 @@ async function fetchWikipediaBlurbs() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        const topics = data[1].slice(0, 5); // Get top 5 results
+        const topics = data[1].slice(0, 6); // Get top 6 results
         
         let blurbsHTML = "";
         for (let topic of topics) {
